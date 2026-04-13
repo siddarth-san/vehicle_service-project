@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Service Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Vehicle Service Recommendation</h1>
+
+<form onsubmit="return checkService()">
+
+    <input type="number" id="km" placeholder="KM Driven"><br><br>
+
+    <input type="number" id="days" placeholder="Days Since Last Service"><br><br>
+
+    <input type="number" step="0.1" id="tyre" placeholder="Tyre Tread (mm)"><br><br>
+
+    <!-- Speed -->
+    <label>Speed Consistency:</label><br>
+    <select id="speed">
+        <option value="low">Low</option>
+        <option value="high">High</option>
+    </select><br><br>
+
+    <!-- Smoke -->
+    <label>Smoke Condition:</label><br>
+    <select id="smoke">
+        <option value="black">Black</option>
+        <option value="normal">Normal</option>
+    </select><br><br>
+
+    <button type="submit">Check Service</button>
+
+</form>
+
+<h2 id="result"></h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>
